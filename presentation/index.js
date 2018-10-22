@@ -96,7 +96,7 @@ export default class Presentation extends React.Component {
           <Heading size={6} textColor="secondary">Wizard Cards</Heading>
           <Image src={images.wizardFlow.replace("/", "")} margin="0px auto" />
         </Slide>
-        <Slide transition={["zoom"]} bgColor="primary">
+        <Slide transition={["fade"]} bgColor="primary">
           <Heading size={6} textColor="secondary">Responsive Mobile Design</Heading>
           <Image src={images.progressTpIphone.replace("/", "")} width="35%" margin="6px" display="inline" />
           <Image src={images.reviewTpIphone.replace("/", "")} width="35%" margin="6px" display="inline" />
