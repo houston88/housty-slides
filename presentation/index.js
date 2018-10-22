@@ -44,7 +44,10 @@ const images = {
   leftNavAnim: require("../assets/portfolio/animatedMenuIcon.gif"),
   addHome: require("../assets/portfolio/addHomeAndroid.png"),
   androidIcon: require("../assets/portfolio/androidIcon.png"),
-  progressPieCharts: require("../assets/portfolio/progressPieCharts.png")
+  wizardFlow: require("../assets/portfolio/wizardFlowNoMenu.png"),
+  desktopTpTasks: require("../assets/portfolio/desktopTextTaskView_goodEx.png"),
+  reviewTpIphone: require("../assets/portfolio/reviewMobile_iphone6.png"),
+  progressTpIphone: require("../assets/portfolio/progress_iphone6.png")
 };
 
 preloader(images);
@@ -86,8 +89,17 @@ export default class Presentation extends React.Component {
           <Image src={images.androidIcon.replace("/", "")} width="35%" margin="6px" display="inline" />
         </Slide>
         <Slide transition={["fade"]} bgColor="primary">
-          <Heading size={6} textColor="secondary">Highcharts Data Viz</Heading>
-          <Image src={images.progressPieCharts.replace("/", "")} height="75vh" height="75vh" margin="0px auto" />
+          <Heading size={6} textColor="secondary">Elegant Layout with SVG Footer</Heading>
+          <Image src={images.desktopTpTasks.replace("/", "")} margin="0px auto" />
+        </Slide>
+        <Slide transition={["zoom"]} bgColor="primary">
+          <Heading size={6} textColor="secondary">Wizard Cards</Heading>
+          <Image src={images.wizardFlow.replace("/", "")} margin="0px auto" />
+        </Slide>
+        <Slide transition={["zoom"]} bgColor="primary">
+          <Heading size={6} textColor="secondary">Responsive Mobile Design</Heading>
+          <Image src={images.progressTpIphone.replace("/", "")} width="35%" margin="6px" display="inline" />
+          <Image src={images.reviewTpIphone.replace("/", "")} width="35%" margin="6px" display="inline" />
         </Slide>
         {/* <Slide transition={["zoom"]} bgColor="primary" textColor="tertiary">
           <Heading size={6} textColor="secondary">Standard List</Heading>
