@@ -69,7 +69,7 @@ export default class Presentation extends React.Component {
           <Image src={images.fuegoDrawer.replace("/", "")} margin="0px auto 40px" />
         </Slide>
         <Slide transition={["fade"]} bgColor="primary">
-          <Heading size={6} textColor="secondary">Details Layout and Animation</Heading>
+          <Heading size={6} textColor="secondary">Details Layout and Transitions</Heading>
           <Image src={images.stageCollapse.replace("/", "")} margin="0px auto 40px" />
         </Slide>
         <Slide transition={["zoom"]} bgColor="primary">
@@ -87,7 +87,7 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide transition={["fade"]} bgColor="primary">
           <Heading size={6} textColor="secondary">Highcharts Data Viz</Heading>
-          <Image src={images.progressPieCharts.replace("/", "")} height="75vh" margin="0px auto" />
+          <Image src={images.progressPieCharts.replace("/", "")} height="75vh" height="75vh" margin="0px auto" />
         </Slide>
         {/* <Slide transition={["zoom"]} bgColor="primary" textColor="tertiary">
           <Heading size={6} textColor="secondary">Standard List</Heading>
