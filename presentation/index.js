@@ -47,7 +47,8 @@ const images = {
   wizardFlow: require("../assets/portfolio/wizardFlowNoMenu.png"),
   desktopTpTasks: require("../assets/portfolio/desktopTextTaskView_goodEx.png"),
   reviewTpIphone: require("../assets/portfolio/reviewMobile_iphone6.png"),
-  progressTpIphone: require("../assets/portfolio/progress_iphone6.png")
+  progressTpIphone: require("../assets/portfolio/progress_iphone6.png"),
+  geoData: require("../assets/portfolio/webScrapeWithMaps.png")
 };
 
 preloader(images);
@@ -97,9 +98,13 @@ export default class Presentation extends React.Component {
           <Image src={images.wizardFlow.replace("/", "")} margin="0px auto" />
         </Slide>
         <Slide transition={["fade"]} bgColor="primary">
-          <Heading size={6} textColor="secondary">Responsive Mobile Design</Heading>
+          <Heading size={6} textColor="secondary">Responsive Mobile Layout</Heading>
           <Image src={images.progressTpIphone.replace("/", "")} width="35%" margin="6px" display="inline" />
           <Image src={images.reviewTpIphone.replace("/", "")} width="35%" margin="6px" display="inline" />
+        </Slide>
+        <Slide transition={["zoom"]} bgColor="primary">
+          <Heading size={6} textColor="secondary">Geospatial Data Search</Heading>
+          <Image src={images.geoData.replace("/", "")} margin="0px auto 40px" />
         </Slide>
         {/* <Slide transition={["zoom"]} bgColor="primary" textColor="tertiary">
           <Heading size={6} textColor="secondary">Standard List</Heading>
